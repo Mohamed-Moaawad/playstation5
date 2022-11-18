@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( 400deg, #8286EF, #EEA8FD);
+}
+
+section .contai{
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(images/1910.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .fog{
+    width: 92%;
+    height: 93%;
+    background-color: rgba(0, 0, 0, 0.09);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 4px solid rgba(255, 255, 255, 0.699);
+}
+
+section .fog .bac{
+    width: 98%;
+    height: 97%;
+    background-image: linear-gradient(60deg, #E3A4FC , #667DEC);
+    border-radius: 15px;
+}
+
+section .container{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000000;
+    background-image: url(images/9611910.svg);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    border: 0;
+}
+
+section .container nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: relative;
+}
+
+section .container nav img{
+    width: 170px;
+}
+
+section .container nav .links{
+    width: 64px;
+    height: 60px;
+    background-color: rgba(255, 240, 255, 0.702);
+    position: relative;
+    right: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: all .8s;
+    padding: 5px 20px 5px 30px;
+    border-radius: 50px;
+}
+
+section .container nav .links i:first-child{
+    font-size: 30px;
+    margin-left: 20px; 
+    cursor: pointer;
+}
+
+#icls{
+    font-size: 21px;
+    color: #000;
+    transition: all .3s;
+}
+
+#icls:hover{
+    transform: translatex(5px);
+    cursor: pointer;
+}
+
+section .container nav .links a{
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+    transition: all .3s;
+    position: absolute;
+    z-index: 1;
+    transition: all .5s;
+}
+
+section .container nav .links span{
+    position: relative;
+    width: 120px;
+    text-align: center;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1.5s;
+    padding: 15px 0 ;
+    border: 2px solid #cb81f7;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+section .container nav .links span:hover a{
+    color: #fff;
+}
+
+section .container nav .links .spa1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    background-color: #C69BF8;
+    top: -2px;
+    right: 120px;
+    transition: all  1s;
+}
+section .container nav .links .spa3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    background-color: #C69BF8;
+    top: -2px;
+    right: 120px;
+    transition: all  1s;
+}
+section .container nav .links .spa4::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 102%;
+    top: -2px;
+    left: 120px;
+    transition: all  1s;
+}
+section .container nav .links .spa2::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 102%;
+    bottom: 0;
+    left: 120px;
+    transition: all .5s;
+} 
+
+section .container nav .links span:hover::after{
+    right: 0;
+    background-image: linear-gradient(to left, #d48cf8, #8796e9);
+}
+
+section .container nav .links span:hover::before{
+    left: 0;
+    background-image: linear-gradient(to left, #d48cf8, #8796e9);
+
+}
+
+
+section .container .content{
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px 90px 48px;
+}
+
+section .container .content .text{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section .container .content h1{
+    font-size: 70px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    color: rgb(238, 238, 238);
+    text-shadow: -2px 8px 2px rgb(146, 146, 146);
+}
+
+section .container .content p{
+    color: rgb(243, 243, 243);
+    margin: 0px 0 25px;
+    text-shadow: -2px 6px 3px rgb(146, 146, 146);
+}
+
+section .container .content button{
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-right: 5px;
+    border-radius: 26px;
+    box-shadow: -1px 1px 4px rgb(102, 97, 97);
+    transition: all .5s;
+}
+
+section .container .content .black{
+    background-color: #000;
+    color: #fff;
+}
+
+section .container .content .whit{
+    background-color: #e8d5ece8;
+    color: #000;
+    border: 0;
+}
+
+section .container .content button:hover{
+    box-shadow: -9px 5px 3px rgb(122, 92, 141);
+    cursor: pointer;
+}
+
+section .container .content .img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+section .container .content img{
+    width: 80%;
+    transform: rotate(-13deg);
+    margin-top: 50px;
+    transition: all 1s;
+}
+
+section .container .content img:hover{
+    transform: scale(1.1);
+    
+}
